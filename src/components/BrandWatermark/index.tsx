@@ -28,7 +28,8 @@ const BrandWatermark = memo<Omit<FlexboxProps, 'children'>>(({ style, ...rest })
       style={{ color: theme.colorTextDescription, fontSize: 12, ...style }}
       {...rest}
     >
-      <span>Powered by</span>
+      <span>Powered by </span>
+      <span style={{ fontWeight: 'bold' }}>LobeHub</span>
       <Link className={styles.logoLink} href={'https://lobehub.com'} target={'_blank'}>
         <Logo size={20} type={'text'} />
       </Link>
